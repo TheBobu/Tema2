@@ -36,12 +36,12 @@ namespace Tema2
             }
 
             string[] termeniIntrare = sirIntrare.Split(' ');
-            for (int i = termeniIntrare.Length - 1; i >= 0; i++)
+            foreach (var i in termeniIntrare.Reverse())
             {
-                intrare.Push(termeniIntrare[i]);
+                intrare.Push(i);
             }
             stiva.Push("$");
-            stiva.Push(0);
+            stiva.Push(0);        
         }
     }
 }
