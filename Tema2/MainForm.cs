@@ -36,7 +36,7 @@ namespace Tema2
                 }
                 else
                 {
-                    automatPushDown.Verificare(textBoxIn.Text, listBoxIn, listBoxStiva);
+                    automatPushDown.Verificare(textBoxIn.Text, listBoxIn, listBoxStiva, listBoxOp);
                 }
             }
         }

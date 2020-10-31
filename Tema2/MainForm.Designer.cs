@@ -34,6 +34,7 @@
             this.listBoxIn = new System.Windows.Forms.ListBox();
             this.btnVerificare = new System.Windows.Forms.Button();
             this.btnIncarcare = new System.Windows.Forms.Button();
+            this.listBoxOp = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // textBoxIn
@@ -56,18 +57,22 @@
             // 
             // listBoxStiva
             // 
+            this.listBoxStiva.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxStiva.FormattingEnabled = true;
-            this.listBoxStiva.Location = new System.Drawing.Point(312, 27);
+            this.listBoxStiva.ItemHeight = 24;
+            this.listBoxStiva.Location = new System.Drawing.Point(291, 27);
             this.listBoxStiva.Name = "listBoxStiva";
-            this.listBoxStiva.Size = new System.Drawing.Size(219, 394);
+            this.listBoxStiva.Size = new System.Drawing.Size(219, 388);
             this.listBoxStiva.TabIndex = 2;
             // 
             // listBoxIn
             // 
+            this.listBoxIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxIn.FormattingEnabled = true;
-            this.listBoxIn.Location = new System.Drawing.Point(546, 27);
+            this.listBoxIn.ItemHeight = 24;
+            this.listBoxIn.Location = new System.Drawing.Point(525, 27);
             this.listBoxIn.Name = "listBoxIn";
-            this.listBoxIn.Size = new System.Drawing.Size(232, 394);
+            this.listBoxIn.Size = new System.Drawing.Size(232, 388);
             this.listBoxIn.TabIndex = 3;
             // 
             // btnVerificare
@@ -92,11 +97,22 @@
             this.btnIncarcare.UseVisualStyleBackColor = true;
             this.btnIncarcare.Click += new System.EventHandler(this.btnIncarcare_Click);
             // 
+            // listBoxOp
+            // 
+            this.listBoxOp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBoxOp.FormattingEnabled = true;
+            this.listBoxOp.ItemHeight = 24;
+            this.listBoxOp.Location = new System.Drawing.Point(775, 27);
+            this.listBoxOp.Name = "listBoxOp";
+            this.listBoxOp.Size = new System.Drawing.Size(234, 388);
+            this.listBoxOp.TabIndex = 6;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1021, 450);
+            this.Controls.Add(this.listBoxOp);
             this.Controls.Add(this.btnIncarcare);
             this.Controls.Add(this.btnVerificare);
             this.Controls.Add(this.listBoxIn);
@@ -118,6 +134,7 @@
         private System.Windows.Forms.ListBox listBoxIn;
         private System.Windows.Forms.Button btnVerificare;
         private System.Windows.Forms.Button btnIncarcare;
+        private System.Windows.Forms.ListBox listBoxOp;
     }
 }
 
