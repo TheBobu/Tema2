@@ -42,7 +42,7 @@ namespace Tema2
                             if (line.Equals("TA"))
                                 break;
                             items = line.Split(' ');
-                            automatPushDown.P.Add(Int32.Parse(items[0]), (items[1], items[2]));
+                            automatPushDown.P.Add(int.Parse(items[0]), (items[1], items[2]));
                             break;
                         }
                     case "TA":
@@ -51,7 +51,7 @@ namespace Tema2
                             if (line.Equals("TS"))
                                 break;
                             items = line.Split(' ');
-                            int index = Int32.Parse(items[0]);
+                            int index = int.Parse(items[0]);
                             if (!automatPushDown.TA.ContainsKey(index))
                             {
                                 automatPushDown.TA.Add(index, new Dictionary<string, string>());
@@ -64,7 +64,7 @@ namespace Tema2
                         {
                             line = reader.ReadLine();
                             items = line.Split(' ');
-                            int index = Int32.Parse(items[0]);
+                            int index = int.Parse(items[0]);
                             if (!automatPushDown.TS.ContainsKey(index))
                             {
                                 automatPushDown.TS.Add(index, new Dictionary<string, string>());

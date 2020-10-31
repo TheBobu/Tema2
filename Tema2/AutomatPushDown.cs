@@ -14,8 +14,8 @@ namespace Tema2
         public Dictionary<int, (string, string)> P;
         public Dictionary<int, Dictionary<string, string>> TA;
         public Dictionary<int, Dictionary<string, string>> TS;
-        public Stack<Object> stiva;
-        public Stack<Object> intrare;
+        public Stack<object> stiva;
+        public Stack<object> intrare;
 
         public AutomatPushDown()
         {
@@ -24,8 +24,8 @@ namespace Tema2
             P = new Dictionary<int, (string, string)>();
             TA = new Dictionary<int, Dictionary<string, string>>();
             TS = new Dictionary<int, Dictionary<string, string>>();
-            stiva = new Stack<Object>();
-            intrare = new Stack<Object>();
+            stiva = new Stack<object>();
+            intrare = new Stack<object>();
         }
 
         public void Verificare(string sirIntrare, ListBox listIntrare, ListBox listStiva)
@@ -41,7 +41,13 @@ namespace Tema2
                 intrare.Push(i);
             }
             stiva.Push("$");
-            stiva.Push(0);        
+            stiva.Push(0);
+            bool accept = false;
+            while(!accept)
+            {
+                
+            }
+            Console.WriteLine(stiva.Peek());
         }
     }
 }
