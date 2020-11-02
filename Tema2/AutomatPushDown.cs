@@ -30,15 +30,9 @@ namespace Tema2
 
         public void Verificare(string sirIntrare, ListBox listIntrare, ListBox listStiva, ListBox listOp)
         {
-            foreach (var item in T)
+            foreach (var i in sirIntrare.Reverse())
             {
-                sirIntrare = sirIntrare.Replace(item, " " + item + " ");
-            }
-            intrare.Clear();
-            string[] termeniIntrare = sirIntrare.Split(' ');
-            foreach (var i in termeniIntrare.Reverse())
-            {
-                intrare.Push(i);
+                intrare.Push(i.ToString());
             }
             stiva.Clear();
             stiva.Push("$");
@@ -80,7 +74,7 @@ namespace Tema2
                     if(operation.StartsWith("d"))
                     {
                         stiva.Push(intrare.Pop());
-                        stiva.Push(int.Parse(operation[1].ToString()));
+                        stiva.Push(int.Parse(operation.Substring(1).ToString()));
                         AfisareStiva1(stiva, listStiva);
                         AfisareStiva(intrare, listIntrare);
                     }
